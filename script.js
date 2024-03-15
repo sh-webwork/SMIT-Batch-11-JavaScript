@@ -1,62 +1,135 @@
-// // Question No 1
+// // Question No 01 (incomplete pending)
 
-// var num1 = +prompt("Enter your number : ");
-// document.write("<br/>The value of a is : " + num1);
-// var result1 = 1 + num1;
-// document.write("<br/><br/>The value of ++a is : " + result1);
-// document.write("<br/>Now the value of a is : " + result1);
-// var result2 = result1 + 1;
-// document.write("<br/>The value of a++ is : " + result1);
-// document.write("<br/>Now the value of a is : " + result2);
-// var result3 = result2 - 1;
-// document.write("<br/>The value of --a is : " + result3);
-// document.write("<br/>Now the value of a is : " + result3);
-// var result4 = result3 - 1;
-// document.write("<br/>The value of a-- is : " + result3);
-// document.write("<br/>Now the value of a is : " + result4);
+// var charCode= prompt("Enter a character to check:")
 
+// function checkInput(input) {
+//     // Convert input to its ASCII code
 
-// // Question No 2
+//     charCode = input.charCodeAt(0);
 
-// var a = 2, b = 1;
-// var result = --a - --b + ++b + b--;
-// document.write("<br/>The value of a: " + a + "<br/> The value of b: " + b);
-// document.write("<br/>The output result to a and b is : " + result);
-// var result1 = a - 1, result2 = b - 1;
-// document.write("<br/>The value of a afer --a is : " + result1);
-// var result3 = result1 - result2;
-// document.write("<br/>The value afer --a - --b is : " + result3);
-// var result4 = result3 + 1 + b;
-// document.write("<br/>The value afer --a - --b + ++b is : " + result4);
-// var result5 = result4 + b;
-// document.write("<br/>The value afer --a - --b + ++b + b-- is : " + result5);
+//     if (charCode >= 48 && charCode <= 57) {
+//         console.log(input + " is a number.");
+//     } else if (charCode >= 65 && charCode <= 90) {
+//         console.log(input + " is an uppercase letter.");
+//     } else if (charCode >= 97 && charCode <= 122) {
+//         console.log(input + " is a lowercase letter.");
+//     } else {
+//         console.log(input + " is not a number or letter.");
+//     }
+// }
 
 
-// // Question No 3
+
+// // Question No 02
+
+// var a = +prompt("Enter integer a:")
+// var b = +prompt("Enter integer b:")
 
 
-// var userName= prompt("Enter your name : ");
-// document.write("Welcome! " + userName + " to JavaScript")
+//     if (a > b) {
+//         console.log(a + " is larger than " + b);
+//     } else if (b > a) {
+//         console.log(b + " is larger than " + a);
+//     } else {
+//         console.log("Both integers are equal: " + a);
+//     }
 
 
-// Question No 4 (No question)
 
-// Question No 5 (Multiplication of table) (cannot program at beginner stage)
+// // Question No 03
 
-// // Question No 6 (Not able to create a table in JS at beginner stage )
+// var number = prompt("Enter a number:");
 
-// var sub1 = prompt("Enter first subject name : ");
-// var sub2 = prompt("Enter second subject name : ");
-// var sub3 = prompt("Enter third subject name : ");
-// var sub1Totalmarks, sub2Totalmarks, sub3Totalmarks = 100;
-// var sub1Obtainmarks = +prompt("Enter subject 1 obtained marks :");
-// var sub2Obtainmarks = +prompt("Enter subject 2 obtained marks :");
-// var sub3Obtainmarks = +prompt("Enter subject 3 obtained marks :");
-// var totalMarks_obtained = sub1Obtainmarks + sub2Obtainmarks + sub3Obtainmarks;
-// var percentage = totalMarks_obtained * 100 / 300;
-// document.write("<br/><br/>" + sub1 + " marks is " + sub1Obtainmarks);
-// document.write("<br/>" + sub2 + " marks is " + sub2Obtainmarks);
-// document.write("<br/>" + sub3 + " marks is " + sub3Obtainmarks);
-// document.write("<br/><br/>Total Marks Obtained is : " + totalMarks_obtained);
-// document.write("<br/>Total Marks is : " + 300);
-// document.write("<br/>Percentage is : " + percentage);
+// if (number > 0) {
+//     console.log(number + " is a positive number.");
+// } else if (number < 0) {
+//     console.log(number + " is a negative number.");
+// } else {
+//     console.log("The number is zero.");
+// }
+
+
+// // Question No 04
+
+// var char = prompt("Enter a character of length 1:");
+
+// if (char == "a") {
+//     console.log(char, "is a Vowel Character");
+// }
+// else if (char == "e") {
+//     console.log(char, "is a Vowel Character");
+// }
+// else if (char == "i") {
+//     console.log(char, "is a Vowel Character");
+// }
+// else if (char == "o") {
+//     console.log(char, "is a Vowel Character");
+// }
+// else if (char == "u") {
+//     console.log(char, "is a Vowel Character");
+// }
+// else {
+//     console.log(char, "is not a Vowel Character");
+
+// }
+
+
+// // Question No 05
+
+// var secretKey = ("abc123");
+// var userPswd = prompt("Enter your password:");
+// if (userPswd === "") {
+
+//     console.log("Please enter your password");
+// }
+// else if (userPswd === secretKey) {
+
+//     console.log("Correct! The password you entered matches the original password");
+// }
+// else {
+
+//     console.log("Incorrect password");
+
+// }
+
+
+// // Question No 06
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//     greeting = "Good day";
+//     console.log(greeting);
+// }
+// else {
+//     greeting = "Good evening";
+//     console.log(greeting);
+// }
+
+
+// // Question No 07
+
+// var userTime = prompt("Enter time in format like: 1900 = 7pm");
+
+// if (userTime >= "0000" && userTime < "1200") {
+
+//     console.log("Good Morning!")
+// }
+// else if (userTime >= "1200" && userTime < "1700") {
+
+//     console.log("Good Afternoon!")
+// }
+// else if (userTime >= "1700" && userTime < "2100") {
+
+//     console.log("Good Evening!")
+// }
+// else if (userTime >= "2100" && userTime <= "2359") {
+
+//     console.log("Good night!")
+// }
+// else {
+
+//     console.log("Incorrect time!")
+
+
+// }
