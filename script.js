@@ -110,3 +110,65 @@
 
 //     }
 // }
+
+
+// Question No 7 You have an array A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”] Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not.
+
+// var userInput = prompt("Welcome to ABC Bakery. What do you want to order Sir/ Ma'am?").toLowerCase();
+// var stock = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// var flag = false;
+
+
+// for (var i = 0; i < stock.length; i++) {
+
+//     if (stock[i] == userInput) {
+//         console.log(userInput + " is available at index " + [i] + " in our bakery");
+//         flag = true;
+//         break;
+//     }
+// }
+//     if (flag === false) {
+//         console.log("We are sorry." + userInput + " is not available in our bakery")
+//     }
+
+
+
+// Question No 8  Write a program to identify the largest number in the given array. A = [24, 53, 78, 91, 12].
+
+
+// var A = [24, 53, 78, 91, 12];
+// var largest = A[0];
+// for (var i = 1; i < A.length; i++) {
+//     if (A[i] > largest) {
+//         largest = A[i];
+//     }
+// }
+
+// console.log("Array items: " + A);
+// console.log("The largest number is: " + largest);
+
+
+
+// Question No 9 Write a program to identify the smallest number in the given array. A = [24, 53, 78, 91, 12]
+
+
+// var A = [24, 53, 78, 91, 12];
+// var smallest = A[0];
+// for (var i = 1; i < A.length; i++) {
+//     if (A[i] < smallest) {
+//         smallest = A[i];
+//     }
+// }
+
+// console.log("Array items: " + A);
+// console.log("The smallest number is: " + smallest);
+
+
+// Question No 10 Write a program to print multiples of 5 ranging 1 to 100.
+
+// for (var i = 1; i <= 100; i++) {
+//     if (i % 5 === 0) {
+//         console.log(i);
+//     }
+// }
